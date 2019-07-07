@@ -16,7 +16,7 @@ class User extends Model {
     );
 
     // hook to create a hash of password in password_hash before save when store
-    this.hook('beforeSave', async user => {
+    this.addHook('beforeSave', async user => {
       if (user.password) {
         user.password_hash = await bcrypt.hash(user.password, 8);
       }
