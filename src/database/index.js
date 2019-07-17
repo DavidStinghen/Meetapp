@@ -2,15 +2,16 @@ import Sequelize from 'sequelize';
 
 import dbconfig from '../config/database';
 import User from '../app/models/User';
+import File from '../app/models/File';
 
-const models = [User];
+const models = [User, File];
 
 class Database {
   constructor() {
     this.init();
   }
 
-  // cria a conexão com o banco de dados
+  // init Postgres database connections
   init() {
     this.connection = new Sequelize(dbconfig);
     models.map(model => model.init(this.connection));
