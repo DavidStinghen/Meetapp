@@ -7,6 +7,7 @@ import SessionController from './app/controllers/SessionController';
 import authMiddleware from './app/middlewares/auth';
 import FIleController from './app/controllers/FIleController';
 import MeetupController from './app/controllers/MeetupController';
+import ScheduleController from './app/controllers/ScheduleController';
 
 const routes = new Router();
 const upload = multer(multerConfig);
@@ -33,5 +34,8 @@ routes.post('/meetups', MeetupController.store);
 routes.put('/meetups/:id', MeetupController.update);
 // route to delete a meetup
 routes.delete('/meetups/:id', MeetupController.delete);
+
+// route to list all meetups of a organizer
+routes.get('/schedule', ScheduleController.index);
 
 export default routes;
