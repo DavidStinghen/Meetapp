@@ -8,6 +8,7 @@ import authMiddleware from './app/middlewares/auth';
 import FIleController from './app/controllers/FIleController';
 import MeetupController from './app/controllers/MeetupController';
 import ScheduleController from './app/controllers/ScheduleController';
+import SubscriptionController from './app/controllers/SubscriptionController';
 
 const routes = new Router();
 const upload = multer(multerConfig);
@@ -37,5 +38,10 @@ routes.delete('/meetups/:id', MeetupController.delete);
 
 // route to list all meetups of a organizer
 routes.get('/schedule', ScheduleController.index);
+
+// route to subscript in a meetup
+routes.post('/meetups/:id/subscriptions', SubscriptionController.store);
+// route to list user subscriptions
+routes.get('/subscriptions', SubscriptionController.index);
 
 export default routes;
