@@ -122,7 +122,7 @@ Return:
 }
 ```
 
-***You can see more exemples of usage inporting  [insomnia.json](https://raw.githubusercontent.com/DavidStinghen/Meetaapp/master/Insomnia_gobarber.json 'Insomnia config') to your Insomnia workspace***
+***You can see more exemples of usage inporting  [insomnia.json](https://raw.githubusercontent.com/DavidStinghen/Meetapp/master/insomniaTestExamples.json 'Insomnia config') to your Insomnia workspace***
 
 ### Thanks to
 
