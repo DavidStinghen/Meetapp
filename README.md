@@ -100,7 +100,7 @@ JSON body:
 
 ```
 {
-	"title": "Rocketseat Bootcamp",
+  "title": "Rocketseat Bootcamp",
   "description": "class to use OmniStack,
   "location": "Rio do sul",
 	"date": "2019-07-23T13:00:00-03:00"
@@ -122,7 +122,7 @@ Return:
 }
 ```
 
-***You can see more exemples of usage inporting  [insomnia.json](https://raw.githubusercontent.com/DavidStinghen/Meetaapp/master/Insomnia_gobarber.json 'Insomnia config')to your Insomnia workspace***
+***You can see more exemples of usage inporting  [insomnia.json](https://raw.githubusercontent.com/DavidStinghen/Meetaapp/master/Insomnia_gobarber.json 'Insomnia config') to your Insomnia workspace***
 
 ### Thanks to
 
